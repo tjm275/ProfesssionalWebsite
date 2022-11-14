@@ -8,6 +8,7 @@ import { WorkExperienceComponent } from './work-experience/work-experience.compo
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ResearchComponent } from './research/research.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
+import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
     WorkExperienceComponent,
     AboutMeComponent,
     ResearchComponent,
-    ContactMeComponent
+    ContactMeComponent,
+    ModalComponent
   ],
   imports: [
     PdfViewerModule,

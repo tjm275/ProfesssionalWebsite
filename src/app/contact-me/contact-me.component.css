@@ -7,3 +7,8 @@ label {
   font-size: 16pt;
   color: white;
 }
+
+.label-box {
+  padding-left: 40px;
+}
+

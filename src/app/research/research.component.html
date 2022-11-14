@@ -1,19 +1,23 @@
   
+  <div style="text-align: center; padding-top: 10px;" width="full">
+    <p width="full" style="font-size: 40px;"><u>Research</u></p>
+  </div>
+  
   <div>
+    <img src="assets/temari.PNG" alt="Diagram of the Temari tool for testing mined specifications"
+      width="600"
+      height="300">
+      <div class="blurb">
+        <p>At Cornell University, I worked in the Software Engineering Lab under Owolabi Legunsen. In this lab I worked in a field called runtime verification, which can be summarized succinctly as a birdge between formal methods of verifying software and normal testing. Runtime verification works by checking program executions against formal mathmatical specifications. One challenge with runtime verification is the writing of said specifications, which are required for RV to work. These need to be written carefully in formal languages, so it is not always possible for developers to spare the time to write them.</p>
+      </div>
+  </div>
+
+  <div style="clear:both; padding-bottom:200px;">
     <img src="assets/fsm.PNG" alt="image"
       width="600"
       height="300">
       <div class="blurb">
-        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae."</p>
-      </div>
-  </div>
-  
-  <div style="clear:both">
-    <img src="assets/temari.PNG" alt="image"
-      width="600"
-      height="300">
-      <div class="blurb">
-        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae."</p>
+        <p>One development in the field are a class of tools known as "specification miners". These tools look at program executions and infer specifications. The idea is that these executions model correct behaviour, so if we enforce correct behaviour, we can avoid bugs. However, many of these mined specifications are trivial, or enforce behaviour that is not strictly required for program correctness. To remedy this issue Temari, perturbs a program such that it violates a specification. If the program behaves correctly while violating the spec, the spec is clearly not required for correctness, and it can be thrown out.</p>
       </div>
   </div>
 
@@ -30,5 +34,5 @@
   [external-link-target]="'blank'"
   [autoresize]="true"
   [show-borders]="false"
-  style="width: 100%; height: 600px;"
+  style="width: 80%; height: 1000px; padding-left: 7%;"
 ></pdf-viewer>
